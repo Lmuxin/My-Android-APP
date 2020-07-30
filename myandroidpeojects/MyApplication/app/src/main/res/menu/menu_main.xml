@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.muzi.myapplication.MainActivity">
+    <item
+        android:id="@+id/media_route_menu_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Cast"
+        app:actionProviderClass="android.support.v7.app.MediaRouteActionProvider"
+        tools:icon="@drawable/mr_button_light" />
+</menu>

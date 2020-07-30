@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#00ff00"
+       android:text="Welcome to my app!" />
+        <!--   match_parent与父控件布局大小一样-->
+
+       <!--wrap_content控件大小刚好包含住里面的内容-->
+
+    <!--gravity是文子的对齐方式top bottom left right center -->
+    <!--可以用“|”来指定多个值，如center_vertical|center_horizontal，表示垂直水平都对齐-->
+
+
+    <EditText
+        android:id="@+id/edit_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UserId"
+        android:maxEms="2"/>
+    <!--//限制EditView最大行数为2行-->
+
+
+    <EditText
+        android:id="@+id/edit_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Passsword"
+        android:maxEms="2"/>//
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+    <!--图片-->
+<!--
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/openeye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/openeye"/>
+-->
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/closeye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/closeeye"/>
+    <!--圆形进度条-->
+   <ProgressBar
+       android:id="@+id/progress_bar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+    <!--水平进度条-->
+    <ProgressBar
+        android:id="@+id/progress_bar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        />
+</LinearLayout>

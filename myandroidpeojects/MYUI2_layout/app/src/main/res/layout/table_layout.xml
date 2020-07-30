@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    >
+   <!--表格布局无法指定控件的宽度，用android:stretchColumns="1"，若表格不能完全沾满屏幕宽度，就将第二列进行拉伸   等于0是将第一列进行拉伸-->
+    <!--表格布局,-->
+
+    <TableRow>
+        <TextView
+            android:id="@+id/account"
+            android:layout_height="wrap_content"
+            android:text="Account:" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:hint="Input you account"
+            />
+    </TableRow>
+
+    <TableRow>
+    <TextView
+
+    android:layout_height="wrap_content"
+    android:text="Password:"
+        />
+        <EditText
+            android:id="@+id/password"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Input you password"
+            />
+        </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/login"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="Login"
+
+            />
+        <!--android:layout_span="2"登录按钮占据两列-->
+    </TableRow>
+</TableLayout>

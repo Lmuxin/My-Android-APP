@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <!--
+ &lt;!&ndash;   horizontal 控件水平排列
+    vertical 控件垂直排列&ndash;&gt;
+
+Android:grivaty 是文字在控件中的 对齐方式
+Android:layout_grivaty 是控件在布局中的对齐方式-->
+
+<EditText
+    android:id="@+id/edit1"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:hint="write something"
+    />
+
+    <Button
+     android:id="@+id/button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+    />
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Button_2"
+        />
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Button_3"
+        />
+
+</LinearLayout>
